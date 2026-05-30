@@ -16,7 +16,7 @@ export default function App() {
 
     useEffect(() => {
         // Establish connection to backend WebSocket
-        const ws = new WebSocket('ws://localhost:8000/ws');
+        const ws = new WebSocket('wss://ecommerce-backend-gv5o.onrender.com');
 
         ws.onmessage = (event) => {
             const newOrder: OrderEvent = JSON.parse(event.data);

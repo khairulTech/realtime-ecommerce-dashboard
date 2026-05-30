@@ -1,0 +1,6 @@
+cd backend
+ .\venv\Scripts\python.exe -m uvicorn main:app --reload
+
+cd frontend
+Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+npm run dev
